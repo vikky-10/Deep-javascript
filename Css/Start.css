@@ -1,0 +1,40 @@
+/* https://estelle.github.io/selectors/#slide15 */
+
+/* selector */
+/*  🏷️ .class, #id, li(element selector */
+/* ul li { */
+/* opacity: 0.5; */
+/* } */
+/* this selector know as descendant selector */
+/* ul li,   same between them example E F */
+/* ol li { */
+/* color: red; */
+/* } */
+/* ol > li { */
+/* children selector   match <li>s in <ol> but not nested <ul>*/
+/* color: black; */
+/* } */
+/* li.hasaclass + li { */
+/* '+' just adjacent sibling */
+/* color: aqua; */
+/* } */
+
+/* 🔴 The ":first-of-type" CSS pseudo-class represents the first element of its type among a group of sibling elements */
+
+/* li.hasaclass ~ li { */
+/*general sibling selector
+matches later siblings, but not nested.
+ it select all li which is after the hasaclass*/
+/* color: gray; */
+/* } */
+
+/* another way of dowing the same as above */
+
+/* it selct the first element of its type */
+
+li:first-of-type ~ li {
+  font-size: 25px;
+}
+li:first-of-type {
+  color: yellow;
+}
