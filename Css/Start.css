@@ -32,9 +32,31 @@ matches later siblings, but not nested.
 
 /* it selct the first element of its type */
 
-li:first-of-type ~ li {
+/* li:first-of-type ~ li {
   font-size: 25px;
 }
 li:first-of-type {
   color: yellow;
-}
+} */
+
+
+/* 🏷️ aLt Attribute */
+/* E[attr]
+Represents elements with an attribute name of attr.
+E[attr=value]
+Represents elements with an attribute name of attr whose value is exactly value.
+E[attr~=value]
+Represents elements with an attribute name of attr whose value is a whitespace-separated list of words, one of which is exactly value.
+👉E[attr|=value]
+Represents elements with an attribute name of attr whose value can be exactly value or can begin with value immediately followed by a hyphen, - (U+002D). It is often used for language subcode matches.
+p[lang|="en"]    <p lang="en-us">
+👉E[attr^=value]
+Represents elements with an attribute name of attr whose value is prefixed (preceded) by value.
+👉E[attr$=value]
+Represents elements with an attribute name of attr whose value is suffixed (followed) by value.
+👉[attr*=value]
+Represents elements with an attribute name of attr whose value contains at least one occurrence of value within the string.
+👉[attr operator value i]
+Adding an i (or I) before the closing bracket causes the value to be compared case-insensitively (for characters within the ASCII range).
+[attr operator value s] 
+Adding an s (or S) before the closing bracket causes the value to be compared case-sensitively (for characters within the ASCII range). */

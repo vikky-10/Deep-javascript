@@ -53,7 +53,7 @@ console.log(" 🔥 ==&&===");
 // // but "==" give true due to coercion
 // console.log(x == y); //true
 
-// console.log(null == undefined); //true because null and undefine both are coercivly equal to each other
+//  👉console.log(null == undefined); //true because null and undefine both are coercivly equal to each other
 // console.log(null === undefined); //false
 
 // var workshope1 = { topic: null };
@@ -121,3 +121,19 @@ console.log(" 🔥 ==&&===");
 // (!([]==[]))
 // (!(false))
 // (true)
+
+// ------ 🔥 summery when use "==" and when not 🔥----------\\
+// ----***************Avoid******-----------
+//   1. == with 0or ""(or even" ") either side
+//    2. == with non-primitives
+//   3. ==true or ==false:allow ToBoolean or use ===
+
+// many people say == to all about comparisons b/t unknown types
+// if you know type are equal then == to identical to triple equal.
+
+// if you know the type you defnatly use "==" because it is faster than "==="
+ 
+
+
+// ------****** 🔥 "===" 🔥******---------\\
+// use when you don't know the type

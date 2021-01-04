@@ -6,15 +6,15 @@
 
 // 🏷️ some example  like array higher order function.
 
-const items = [
-  { name: "bike", price: 100 },
-  { name: "tv", price: 200 },
-  { name: "Album", price: 10 },
-  { name: "Book", price: 5 },
-  { name: "phone", price: 500 },
-  { name: "computer", price: 1000 },
-  { name: "keyboard", price: 25 },
-];
+// const items = [
+//   { name: "bike", price: 100 },
+//   { name: "tv", price: 200 },
+//   { name: "Album", price: 10 },
+//   { name: "Book", price: 5 },
+//   { name: "phone", price: 500 },
+//   { name: "computer", price: 1000 },
+//   { name: "keyboard", price: 25 },
+// ];
 //    🤩 filter()
 
 // i want new array having item price less than 200
@@ -99,6 +99,6 @@ const items = [
 // console.log(total);
 
 // 🤩  include()
-const item = [1, 2, 3, 4, 5];
-const hasitem = item.includes(2);
-console.log(hasitem); // true
+// const item = [1, 2, 3, 4, 5];
+// const hasitem = item.includes(2);
+// console.log(hasitem); // true

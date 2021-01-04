@@ -67,13 +67,68 @@
 
 // 🏷️ null vs undefine vs undeclared
 //  undefine and null both are on data type category
-
+// undeclare doesnot exist
 // undefined is a variable that has been declared but no value exists and is a type of itself ‘undefined’.
 // null is a value of a variable and is a type of object.
 // null is  one of JavaScript's primitive values and is treated as falsy for boolean operations.
-var str = "vikky@";
-var m = str.match(/@/);
+// var str = "vikky@";
+// var m = str.match(/@/);
 
-if (m == null) {
-  console.log("hii");
-}
+// if (m == null) {
+//   console.log("hii");
+// }
+
+// var x = 2;
+// function foo() {
+//   var y = 2;
+//   console.log(x + y);
+// }
+// foo();
+
+// 🏷️difference between function declation and function expression
+
+// What is Function Statement/Declarations in JavaScript?
+// The function statement declares a function.
+// A declared function is “saved for later use”, and will be executed later, when it is invoked (called).
+// Just as Variable Declarations must start with “var”, Function Declarations must begin with “function”.
+// e.g.
+// function bar() {
+// return 3;
+// }
+// function is only declared here .For using it, it must be invoked using function name. e.g bar();
+
+// functION EXPRESSTION:
+// A function expression can be stored in a variable:
+// var x = function (a, b) {return a * b};
+
+// After a function expression has been stored in a variable, the variable can be used as a function. Functions stored in variables do not need function names. They are always invoked (called) using the variable name.
+
+//  👇 this code get exicuted  because Declaration are loaded before any code
+// console.log(foo());
+// function foo() {
+//   console.log("hii this is vikky");
+// }
+
+//  👇 this give us an error because foo wasn't loaded yet(function expression)
+// console.log(foo());
+// var foo = function () {
+//   return 5;
+// };
+
+// reference error
+// var foo = function otherfoo() {
+//   console.log("this is not in the scope : reference error");
+// };
+// console.log(otherfoo);
+
+// 🔴function expresstion put there identifire into its own scope
+// 🔴 in function declation function word is first thing in the statement
+
+// ANONIMUS FUNCTION EXPRESSION
+var clickHandler = function () {
+  // ...code
+};
+// Named function expression
+var keyHandler = function keyHandler() {
+  // ...code
+};

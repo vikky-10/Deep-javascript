@@ -66,22 +66,22 @@
 
 // 🏷️ Object Destructuring
 
-const personOne = {
-  name: "vikky",
-  age: 24,
-  address: {
-    city: "goa",
-    state: "mp",
-  },
-};
-const personTwo = {
-  name: "Ankit",
-  age: 14,
-  address: {
-    city: "gobinnager",
-    state: "up",
-  },
-};
+// const personOne = {
+//   name: "vikky",
+//   age: 24,
+//   address: {
+//     city: "goa",
+//     state: "mp",
+//   },
+// };
+// const personTwo = {
+//   name: "Ankit",
+//   age: 14,
+//   address: {
+//     city: "gobinnager",
+//     state: "up",
+//   },
+// };
 //       👇 here name is same as in object
 // const {name, age}=personOne;
 // console.log(name);
