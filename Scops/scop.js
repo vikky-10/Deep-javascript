@@ -171,9 +171,45 @@ var keyHandler = function keyHandler() {
 
 // block scoping
 // instend of iifs
-var teacher = "Kyle";
-{
-  let teacher = "suzy";
-  console.log(teacher);
+// var teacher = "Kyle";
+// {
+
+// use let or const
+//   let teacher = "suzy";
+//   console.log(teacher);
+// }
+// console.log(teacher);
+
+// let vs var
+
+// const x = 5;
+
+// {
+//   let y = 78;
+// }
+// try {
+//   console.log(y);
+// } catch (err) {
+//   console.error(err);
+// }
+
+// var can be use many time but let not
+let x = 5;
+console.log("hii");
+console.log("hii");
+console.log("hii");
+console.log("hii");
+console.log("hii");
+console.log("hii");
+console.log("hii");
+console.log("hii");
+console.log("hii");
+console.log("hii");
+console.log("hii");
+try {
+  let x; // it throw an error
+
+  console.log(x);
+} catch (error) {
+  console.error(error);
 }
-console.log(teacher);
