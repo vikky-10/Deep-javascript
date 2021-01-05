@@ -132,3 +132,48 @@ var clickHandler = function () {
 var keyHandler = function keyHandler() {
   // ...code
 };
+
+// 523cfd531996a6a8ffdc7d06fd89df9d
+// 🏷️  Lexical and Dynamic Scoping
+
+// var a = "hello vikky";
+// function sec() {
+//   var b = "how are";
+
+//   function second() {
+//     var c = "you ?";
+//     console.log(a + b + c);
+
+//     function three() {
+//       var d = "hii eeveryone";
+//       console.log(a + b + c + d);
+//     }
+//     three();
+//   }
+//   second();
+// }
+
+// sec();
+
+// 🏷️ IIFE :An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined.
+
+// 🔴 It is a design pattern which is also known as a Self-Executing Anonymous Function and contains two major parts:
+// 🔴The first is the anonymous function with lexical scope enclosed within the Grouping Operator (). This prevents accessing variables within the IIFE idiom as well as polluting the global scope.
+// 🔴 The second part creates the immediately invoked function expression () through which the JavaScript engine will directly interpret the function.
+
+// var teacher = "vikky";
+// (function anotherteacher() {
+//   var teacher = "asif";
+//   console.log(teacher);
+// })();
+// // anotherteacher(); // also writen as  👉(anotherteacher)()
+// console.log(teacher);
+
+// block scoping
+// instend of iifs
+var teacher = "Kyle";
+{
+  let teacher = "suzy";
+  console.log(teacher);
+}
+console.log(teacher);
