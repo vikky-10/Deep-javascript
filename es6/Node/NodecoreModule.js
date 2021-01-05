@@ -2,6 +2,7 @@
 // 🔴 file system
 
 const fs = require("fs");
+//  dot tells yu import either your module or his modules.
 
 // fs.writeFileSync("fs.js", "helo bro");
 // // here overwrite take place
@@ -34,4 +35,9 @@ const fs = require("fs");
 // buf.write("oyo");
 // //  start from first index up to its length
 // console.log(buf.toString());
-fs.copyFileSync("fs.js", "copy.js");
+// fs.copyFileSync("fs.js", "copy.js");
+
+// all the file based operation have synchronous , callback, promise-based forms.
+
+const file = fs.readFileSync("fs.js", { encoding: "utf-8" }).toString();
+console.log(file);
