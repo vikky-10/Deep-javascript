@@ -66,11 +66,11 @@ console.log("🔥 Closure 🔥"); // 🏷️ important interview question
 
 // 🔴 smart interview question without using let how you can handle this
 
-for (var i = 1; i <= 5; i++) {
-  function close(x) {
-    setTimeout(() => {
-      console.log(x);
-    }, i * 1000);
-  }
-  close(i);
-}
+// for (var i = 1; i <= 5; i++) {
+//   function close(x) {
+//     setTimeout(() => {
+//       console.log(x);
+//     }, i * 1000);
+//   }
+//   close(i);
+// }

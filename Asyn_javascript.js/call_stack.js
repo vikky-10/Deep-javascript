@@ -7,9 +7,9 @@
 
 //  🔥 setTimeout()
 
-console.log("hii this is vikky");
-setTimeout(() => {
-  // async javascript
-  console.log("good");
-}, 2000);
-console.log("how is this");
+// console.log("hii this is vikky");
+// setTimeout(() => {
+//   // async javascript
+//   console.log("good");
+// }, 2000);
+// console.log("how is this");

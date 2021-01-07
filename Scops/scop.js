@@ -194,22 +194,22 @@ var keyHandler = function keyHandler() {
 // }
 
 // var can be use many time but let not
-let x = 5;
-console.log("hii");
-console.log("hii");
-console.log("hii");
-console.log("hii");
-console.log("hii");
-console.log("hii");
-console.log("hii");
-console.log("hii");
-console.log("hii");
-console.log("hii");
-console.log("hii");
-try {
-  let x; // it throw an error
+// let x = 5;
+// console.log("hii");
+// console.log("hii");
+// console.log("hii");
+// console.log("hii");
+// console.log("hii");
+// console.log("hii");
+// console.log("hii");
+// console.log("hii");
+// console.log("hii");
+// console.log("hii");
+// console.log("hii");
+// let x;// it throw an error
+// console.log(x);
 
-  console.log(x);
-} catch (error) {
-  console.error(error);
-}
+
+
+
+background

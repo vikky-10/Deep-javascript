@@ -39,5 +39,6 @@ const fs = require("fs");
 
 // all the file based operation have synchronous , callback, promise-based forms.
 
-const file = fs.readFileSync("fs.js", { encoding: "utf-8" }).toString();
-console.log(file);
+// const file = fs.readFileSync("fs.js", { encoding: "utf-8" }).toString();
+// console.log(file);
+

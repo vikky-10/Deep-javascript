@@ -10,3 +10,6 @@
 // >4
 // >_  it store the last result
 // >4
+// almost all thing what we can do in console do in node 
+
+// javascript lib
