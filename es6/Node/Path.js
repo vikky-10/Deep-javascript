@@ -21,4 +21,6 @@ console.log(fileLocation);
 
 // 🟥 parse it return an object
 console.log(path.parse(fileLocation));
+
+// normalize the path
 console.log(path.normalize(fileLocation));
