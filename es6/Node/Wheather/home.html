@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./home.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="topperContainer">
+      <div class="front">
+        <div class="leftSideContainer">
+          <div class="bg"></div>
+          <div class="dateContainer">
+            <span class="day" id="one">Sund</span>
+            <div>
+              <span class="date" id="two">4</span>
+              <span class="month" id="three"></span>
+              <span class="year" id="four"></span>
+            </div>
+            <i class="pin" data-feather="map-pin"></i>
+            <span class="location">London, UK</span>
+          </div>
+
+          <div class="LilInfoContainer">
+            <i class="WeatherIcon" data-feather="cloud"></i>
+            <span class="WeatherIcon"
+              ><img
+                src="https://cdn.weatherapi.com/weather/64x64/night/176.png"
+            /></span>
+            <span class="MainDeg">29°</span>
+            <span class="Description">Scattered Clouds</span>
+          </div>
+        </div>
+        <div class="rightSideContainer">
+          <!-- list start -->
+          <div class="moreInfoContainer">
+            <ul class="InfoList">
+              <li class="infoItem">
+                <span>PRECIPITATION</span><span class="value">0%</span>
+              </li>
+              <li class="infoItem">
+                <span>HUMIDITY</span><span class="value">34%</span>
+              </li>
+              <li class="infoItem">
+                <span>WIND</span><span class="value">14km/h</span>
+              </li>
+              <li class="infoItem">
+                <span>FEELS LIKE</span><span class="value">25°</span>
+              </li>
+              <li class="infoItem">
+                <span>HIGHEST TEMP</span><span class="value">32°</span>
+              </li>
+              <li class="infoItem">
+                <span>LOWEST TEMP</span><span class="value">22°</span>
+              </li>
+            </ul>
+          </div>
+          <!-- list end -->
+        </div>
+        <!-- time start -->
+        <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+      </div>
+    </div>
+    <script>
+      function showTime() {
+        var date = new Date();
+        var h = date.getHours(); // 0 - 23
+        var m = date.getMinutes(); // 0 - 59
+        var s = date.getSeconds(); // 0 - 59
+        var session = "AM";
+
+        if (h == 0) {
+          h = 12;
+        }
+
+        if (h > 12) {
+          h = h - 12;
+          session = "PM";
+        }
+
+        h = h < 10 ? "0" + h : h;
+        m = m < 10 ? "0" + m : m;
+        s = s < 10 ? "0" + s : s;
+
+        var time = h + ":" + m + ":" + s + " " + session;
+        document.getElementById("MyClockDisplay").innerText = time;
+        document.getElementById("MyClockDisplay").textContent = time;
+
+        setTimeout(showTime, 1000);
+      }
+
+      showTime();
+      var days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+      var months = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
+      //   const todaysDay = () => {
+      var dates = new Date();
+      var day = days[dates.getDay()];
+      var month = months[dates.getMonth()];
+      var fullYear = dates.getFullYear();
+      var date = dates.getDate();
+
+      //   };
+      //   todaysDay();
+      document.getElementById("one").innerHTML = day;
+      document.getElementById("two").innerHTML = date;
+      document.getElementById("three").innerHTML = month;
+      document.getElementById("four").innerHTML = fullYear;
+    </script>
+  </body>
+</html>
