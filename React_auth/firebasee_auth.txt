@@ -1,0 +1,1 @@
+{% comment %}>>> this the react and firebase authantication {% endcomment %}
