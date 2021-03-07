@@ -54,3 +54,6 @@ console.log(" 🚀 Typescript");
 
 // ♻️  THE TYPESCRIPT COMPILER
 //  npm install -g typescript
+
+
+// FOR compilation
