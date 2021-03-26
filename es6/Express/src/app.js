@@ -1,5 +1,5 @@
 //  importing the express modules
-
+// Express is a routing and middleware web framework that has minimal functionality of its own: An Express application is essentially a series of middleware function calls.
 // 🔴 feature ref: https://medium.com/@jaeger.rob/introduction-to-nodes-express-js-db5617047150
 const path = require("path");
 const express = require("express");
