@@ -21,3 +21,8 @@ for compilation typescript file
 }
 need to add start script
 "start":lite-server"
+
+core Types
+1️⃣ "number" all number no difference between integer or floats
+2️⃣ "string"
+3️⃣ "boolean"
