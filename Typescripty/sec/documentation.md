@@ -26,3 +26,19 @@ core Types
 1️⃣ "number" all number no difference between integer or floats
 2️⃣ "string"
 3️⃣ "boolean"
+
+let cc:{firstname: string rollno: number};
+cc={
+firstname:"vikky singh"
+rollno: 20
+};
+
+<!-- 🏷️ -->
+
+INTERFACES
+function printLabel(labeledObj: { label: string }) {
+console.log(labeledObj.label);
+}
+
+let myObj = { size: 10, label: "Size 10 Object" };
+printLabel(myObj);
