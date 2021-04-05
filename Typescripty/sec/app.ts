@@ -93,20 +93,20 @@
 // }
 // declare let getcar: Car1 | Car2;
 // console.log(getcar.color);
-interface Bird {
-  fly(): void;
-  layEggs(): void;
-}
+// interface Bird {
+//   fly(): void;
+//   layEggs(): void;
+// }
 
-interface Fish {
-  swim(): void;
-  layEggs(): void;
-}
+// interface Fish {
+//   swim(): void;
+//   layEggs(): void;
+// }
 
-declare function getSmallPet(): Fish | Bird;
+// declare function getSmallPet(): Fish | Bird;
 
-var pet = getSmallPet();
-pet.layEggs();
+// var pet = getSmallPet();
+// pet.layEggs();
 
 // Only available in one of the two possible types
 // pet.swim();
