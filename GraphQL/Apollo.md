@@ -69,3 +69,6 @@ resolvers,
 server.listen().then(({ url }) => console.log(`Server ready at ${url}`))
 
 Here, we pass as a parameter an object that holds the schema and the resolver to ApolloServer to create the server and then listens to it. With that in place,
+
+
+🏷️ actually appollo uses express as backend.
