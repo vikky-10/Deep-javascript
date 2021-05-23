@@ -24,23 +24,25 @@
 // example
 
 const express = require("express");
-var x = 14;
+// var x = 14;
 
 const app = express();
 // standard function pass to app.get()
-const urlLogger = (request, response, next) => {
-  console.log("Request URL:", request.url);
-  next();
-};
-app.get("/", (req, res, next) => {
-  res.send("<h1>Hello everyone</h1>");
-});
+// const urlLogger = (request, response, next) => {
+//   console.log("Request URL:", request.url);
+//   next();
+// };
+// app.get("/", (req, res, next) => {
+//   res.send("<h1>Hello everyone</h1>");
+// });
 
-app.get("/midd", urlLogger, (request, response) => {
-  response.status(200).json({ name: "vikky" });
-  response.json();
-});
-console.dir(app.locals.x);
+// app.get("/midd", urlLogger, (request, response) => {
+//   response.status(200).json({ name: "vikky" });
+//   response.json();
+// });
+// console.dir(app.locals.x);
+
+/ 
 
 app.listen(5000, () => {
   console.log("listening to :", 5000);

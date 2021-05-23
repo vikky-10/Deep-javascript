@@ -9,6 +9,9 @@ $ npm install --save-dev babel-cli babel-preset-env
 🏷️Starting the Babel compiler manually after every code change would be inconvenient. By using babel-watch we can automate this task and in addition making sure that the Node.js web server process is restarted as well
 $ npm install babel-watch --save-dev
 
+🏷️Starting the Babel compiler manually after every code change would be inconvenient. By using babel-watch we can automate this task and in addition making sure that the Node.js web server process is restarted as well
+$ npm install babel-watch --save-dev
+
 🔴Later on, when we’ve implemented the server in file server.js this will enable us to start the server by using the following command:
 
 $ npm run dev
@@ -69,6 +72,5 @@ resolvers,
 server.listen().then(({ url }) => console.log(`Server ready at ${url}`))
 
 Here, we pass as a parameter an object that holds the schema and the resolver to ApolloServer to create the server and then listens to it. With that in place,
-
 
 🏷️ actually appollo uses express as backend.
