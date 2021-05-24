@@ -75,23 +75,45 @@
 
 //    Prototype and Prototype chain
 
-function userCreator(name, score) {
-  const newUser = Object.create(userFunctionStore);
-  newUser.name = name;
-  newUser.score = score;
-  return newUser;
-}
-const userFunctionStore = {
-  increment: function () {
-    this.score++;
+// function userCreator(name, score) {
+//   const newUser = Object.create(userFunctionStore);
+//   newUser.name = name;
+//   newUser.score = score;
+//   return newUser;
+// }
+// const userFunctionStore = {
+//   increment: function () {
+//     this.score++;
+//   },
+//   login: function () {
+//     console.log("You're loggedin");
+//   },
+// };
+// const user1 = userCreator("Phil", 4);
+// const user2 = userCreator("Julia", 5);
+// user1.increment();
+// user2.increment();
+// console.log(user1.score);
+// console.log(user2.score);
+
+// 🏷️ getter and setter
+// getter==> access property
+// setter==>changee(mutate) them
+const person = {
+  firstname: "vikky",
+  lastname: "singh",
+  get fullname() {
+    return `${person.firstname} ${person.lastname}`;
   },
-  login: function () {
-    console.log("You're loggedin");
+  set fullname(value) {
+    const parts = value.split(" ");
+    this.firstname = parts[0];
+    this.lastname = parts[1];
   },
 };
-const user1 = userCreator("Phil", 4);
-const user2 = userCreator("Julia", 5);
-user1.increment();
-user2.increment();
-console.log(user1.score);
-console.log(user2.score);
+// console.log(person.fullname());
+
+person.fullname = "arjunb singh"; //this is not allow without setter
+console.log(person.fullname); //this is not allow without getter fullname()
+console.log(person.firstname);
+console.log(person);

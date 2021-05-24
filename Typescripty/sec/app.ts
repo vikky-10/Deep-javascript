@@ -110,3 +110,35 @@
 
 // Only available in one of the two possible types
 // pet.swim();
+
+// const person: {
+//   name: string;
+//   age: 21;
+//   hobbies: string[];
+//   role: [number, string];
+// } = {
+//   name: "vikky",
+//   age: 21,
+//   hobbies: ["sports", "singing"],
+//   role: [2, "author"],
+// };
+// person.role.push("admin"); why this works 😕 push is an exception  it  allow in tuple
+// person.role[1] = 10; error because sec one is string
+
+// person.role[(0, "singh", 45)]; it now support because tuple is fix length
+// console.log(person.role);
+
+// enum
+
+// enum Role {
+//   ADMIN,
+//   READ_ONLY,
+//   AUTHOR,
+// }
+
+// const person = {
+//   name: "vikky",
+//   age: 21,
+//   hobbies: ["sports", "singing"],
+//   role: Role.ADMIN,
+// };

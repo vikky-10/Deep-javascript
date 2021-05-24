@@ -81,8 +81,7 @@
 
 - (10) Tuple values often require type annotations ( : [number, number] )
   \*/
-  // const xx = [32, 31]; // number[];
-  // const yy: [number, number] = [32, 31];
+  // const xx = [32, 31]; /var person
 
 //== OBJECTS ==//
 
@@ -186,3 +185,15 @@ declare var myLibrary;
 The type that the TypeScript runtime will give to myLibrary variable is the any type. The problem here is that you won’t have Intellisense for that variable in design time but you will be able to use the library in your code. Another option to have the same behavior without using the declare keyword is just using a variable with the any type:
 
 var myLibrary: any;
+
+var person={
+name:"vikky",
+age:21,
+hobbies:['sports','singing]
+}
+for(const hobbies of person.hobbies ){
+console.log(hobbies);
+
+  <!-- console.log(hobbies.map()) error because hobbies is not an array its a string -->
+
+}

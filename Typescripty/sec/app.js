@@ -88,5 +88,49 @@
 // pet.layEggs();
 // Only available in one of the two possible types
 // pet.swim();
-var cars, _a = void 0,  = _a.name,  = _a["skoda"],  = _a.color,  = _a["red"];
-console.log(cars);
+// const person: {
+//   name: string;
+//   age: 21;
+//   hobbies: string[];
+//   role: [number, string];
+// } = {
+//   name: "vikky",
+//   age: 21,
+//   hobbies: ["sports", "singing"],
+//   role: [2, "author"],
+// };
+// person.role.push("admin"); why this works 😕 push is an exception  it  allow in tuple
+// person.role[1] = 10; error because sec one is string
+// person.role[(0, "singh", 45)]; it now support because tuple is fix length
+// console.log(person.role);
+
+// enum
+// var Role;
+// (function (Role) {
+//     Role[Role["ADMIN"] = 0] = "ADMIN";
+
+//    Role[Role["READ_ONLY"] = 1] = "READ_ONLY";
+//     Role[Role["AUTHOR"] = 2] = "AUTHOR";
+// })(Role || (Role = {}));
+// var person = {
+//     name: "vikky",
+//     age: 21,
+//     hobbies: ["sports", "singing"],
+//     role: Role.ADMIN
+// };
+
+// class Person {
+//   static _counter = 0;
+//   planet = "earth";
+//   const myname="string"; <=== this is not possible in ES6
+//   constructor(name) {
+//     this.id = Person._counter++;
+//     this.name = name;
+//   }
+// }
+// let mike = new Person("mike");
+// let staf = new Person("stafane");
+// console.log(mike, staf);
+
+// output
+// Person {planet: "earth", id: 0, name: "mike"} Person {planet: "earth", id: 1, name: "stafane"}
