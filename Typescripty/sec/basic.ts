@@ -30,9 +30,19 @@
 // }
 
 // any type
-let age = 34;
-let myage = age as any;
-myage = "35";
-let yourname: any = "vikky";
-yourname = 56532;
-console.log(yourname);
+// let age = 34;
+// let myage = age as any;
+// myage = "35";
+// let yourname: any = "vikky";
+// yourname = 56532;
+// console.log(yourname);
+
+let arr = [10, 21, 25, 1, 4, 14];
+//  this gives us the
+//  for(let i of arr){
+// console.log(i);
+//  }
+// this give us index
+for (let j in arr) {
+  console.log(j);
+}

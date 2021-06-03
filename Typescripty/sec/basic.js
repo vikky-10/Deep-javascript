@@ -27,9 +27,18 @@
 //   console.log(hobby.toUpperCase());
 // }
 // any type
-// var age = 34;
-// var myage = age;
+// let age = 34;
+// let myage = age as any;
 // myage = "35";
-// var yourname = "vikky";
+// let yourname: any = "vikky";
 // yourname = 56532;
 // console.log(yourname);
+var arr = [10, 21, 25, 1, 4, 14];
+//  this gives us the
+//  for(let i of arr){
+// console.log(i);
+//  }
+// this give us index
+for (var j in arr) {
+    console.log(j);
+}
