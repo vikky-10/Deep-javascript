@@ -54,3 +54,20 @@
 
 // this not give an error beacuse in js arr is an object type
 // myobj=["vikky",45];
+
+// Function type
+let greet: Function;
+// greet="vikky"; because greet is function type
+greet = () => {
+  console.log("hii ");
+};
+const add = (x: number, y: number, z: number | string = 10) => {
+  console.log(x + y);
+  console.log(z);
+};
+
+// gives error if i not provide third parameter z
+// to make z opational use ? (x: number, y: number, z?: number | string  )
+// or we can pass default value to it (x: number, y: number, z: number | string=10  ) when we pass default value not use ?
+// pass optional parameter in last
+add(7, 8);
