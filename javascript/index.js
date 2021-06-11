@@ -97,7 +97,56 @@ console.log("Lets begin");
 // console.log(b);
 
 // operator precedence
-const now = 2021;
-const age = now - 2001;
-console.log(age);
-console.log(now - 1997 > now - 2003);
+// const now = 2021;
+// const age = now - 2001;
+// console.log(age);
+// console.log(now - 1997 > now - 2003);
+
+// exponential operator exicute right to left
+// max operator exicute left to right
+// all mathmatical operator has higher precedence to comparision operator
+
+// console.log(25 - 10 - 5);left to right
+
+// similarly assignment operator right ot left
+
+// let x, y;
+// x = y = 25 - 10 - 5;
+// console.log(x, y);//10 10
+
+// BMI=MASS/HEIGHT**2
+// marks
+// const mweight=78;
+// const jweight=92;
+// const mheight=1.69;
+// const jheight=1.95;
+// const mBMI=mweight/mheight**2;
+// const jBMI=jweight/jheight**2;
+// const markHigherbmi=mBMI>jBMI;
+// console.log(markHigherbmi);
+
+// expresstion is combination of operator and Operand
+
+// function test() {
+//   var a = "3";
+//   var b = "8";
+
+/***********Do not change the code above 👆*******/
+//Write your code on lines 7 - 9:
+
+//   /***********Do not change the code below 👇*******/
+
+//   a = a ^ b;
+//   b = a ^ b;
+//   a = a ^ b;
+//   console.log("a is " + a);
+//   console.log("b is " + b);
+// }
+// test();
+
+//   Logical
+// &&
+let a = 10;
+let b = -42;
+console.log((a < b ? "hii" : "byy") && (b < a ? "yoo" : "poo"));
+//
