@@ -148,5 +148,4 @@ console.log("Lets begin");
 // &&
 let a = 10;
 let b = -42;
-console.log((a < b ? "hii" : "byy") && (b < a ? "yoo" : "poo"));
-//
+console.log(a > b && b > a);

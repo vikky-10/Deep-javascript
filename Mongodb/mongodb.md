@@ -109,6 +109,7 @@ with limit
 without a limit
 
 > db.vikky.findOne({active:true})
+> output:
 > {
 
         "_id" : ObjectId("60c33745c58cf2ea66850b53"),
@@ -118,3 +119,54 @@ without a limit
         "active" : true
 
 }
+
+do the same as previous but thus time get the 2nd field with active:true by skipping the 1st field
+
+> db.vikky.find({active:true}).pretty().limit(1).skip(1)
+> output:
+> {
+
+        "_id" : ObjectId("60c33892c58cf2ea66850b56"),
+        "name" : "arjun",
+        "active" : true
+
+}
+
+9️⃣ Update query
+
+updateOne() it update first matching field
+
+> db.<collection name>.updateOne(<filter>,<update>)
+
+updateMany() it update all matching fields
+
+> db.<collection name>.updateMany(<filter>,<update>)
+
+update the hobbies "nopthing to something
+
+> db.vikky.updateOne({name:"sumit"},{$set:{hobbies:"something"}})
+
+output:
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+
+$set operator replaces the value of a field with the specified value
+
+similar to update more then one field
+
+> db.vikky.updateMany({type:"sinha"},{$set:{hobbies:"basketboll"}})
+
+🔟 Delete operation
+
+deleteMany()
+db.<collection name>.deleteMany(DELLETION_CRITTERIA)
+
+> db.vikky.deleteMany({name:"arjun"})
+> output:
+
+{ "acknowledged" : true, "deletedCount" : 3 }
+
+delete collection
+
+> db.vikkysingh.deleteMany({})
+> output:
+> { "acknowledged" : true, "deletedCount" : 1 }
