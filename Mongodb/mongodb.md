@@ -170,3 +170,28 @@ delete collection
 > db.vikkysingh.deleteMany({})
 > output:
 > { "acknowledged" : true, "deletedCount" : 1 }
+
+Testing
+
+--------#########--------
+
+🔥 Mocha  
+Mocha is a testing framework
+use it to perform test within our application
+make sure everything works correctly
+
+--one of the use cases
+
+TEST our connection with the database
+-creating records
+-Reading records
+-updating records
+-Deleting records
+
+installation
+
+> npm install mocha --save
+
+<!-- mongoose -->
+
+it is an object data modeling(ODM) library for mongodb and node js. it provide shema validation , manage relationships b/w data.

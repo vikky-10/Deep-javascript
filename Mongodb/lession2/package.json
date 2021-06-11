@@ -1,8 +1,8 @@
 {
-  "name": "lession1",
+  "name": "lession2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mocha": "^9.0.0",
     "mongoose": "^5.12.13"
   }
 }
