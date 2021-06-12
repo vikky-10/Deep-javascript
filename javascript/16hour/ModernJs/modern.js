@@ -23,9 +23,9 @@
 // console.log(ans1);
 
 // error
-let res = ans(5);
-console.log(res);
+// const res = ans(5);
+// console.log(res);
 
-var ans = function (age) {
-  return age;
-};
+// const ans = function (age) {
+//   return age;
+// };
