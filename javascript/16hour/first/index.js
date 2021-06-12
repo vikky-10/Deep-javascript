@@ -9,7 +9,8 @@ console.log("Lets begin");
 // console.log(" " + "0");
 // 1=true;
 // 0=false;
-
+// console.log(3 ** 2);
+// console.log(10 ** -1);//1/10
 // console.log(true + true);//2
 // console.log(true + false);//1
 // console.log(false + false);//0
@@ -88,3 +89,32 @@ console.log("Lets begin");
 // isNaN('123') //false
 // isNaN(NaN) //true
 // isNaN('NaN') //true
+
+// 🔢 string
+
+// console.log("vikky singh");
+
+// console.log("hello " + "world");
+
+//swap
+// var a = 5;
+// var b = 10;
+// a = a + b;
+// b = a - b;
+// a = a - b;
+// console.log(a, b);
+
+// multiline string
+
+// before es6
+// console.log("my name is vikky\n\
+// i am 20\n\
+// how are you doing");
+
+//ES6
+// using backtik
+
+// console.log(`my name is vikky
+// i am 20
+// how are you doing `);
+// for emoji widow+.
