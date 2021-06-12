@@ -113,3 +113,28 @@ console.log("🔥 lets gooooo....");
 
 //function parameter are the name listed in function's definition
 //function arguments are the real values passed to the function
+
+// DRY DO NOT REPEAT YOURSELF
+
+//fUNCTION EXPRESSION
+
+//function EXPRESSION SIMPLE MEANS
+//CREATE A FUNCTION AND PUT IT INTO THE VARIABLE
+
+//return keyword is mendatory
+// function sum(a, b) {
+//   var res = a + b;
+//   return res;
+// }
+// var funexp = sum(5, 10);
+// console.log(funexp);
+
+// Anonymous function expression
+
+// var funexp = function (a, b) {
+//   var res = a + b;
+//   return res;
+// };
+
+// var sum = funexp(5, 10);
+// console.log(sum);
