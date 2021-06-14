@@ -45,6 +45,7 @@ function addTodo() {
 
 // PUT/PATCH REQUEST
 function updateTodo() {
+  //update so we need to know while to update
   // axios
   //   .put("https://jsonplaceholder.typicode.com/todos/1", {
   //     title: "update Todo",
@@ -68,22 +69,83 @@ function updateTodo() {
 
 // DELETE REQUEST
 function removeTodo() {
-  console.log("DELETE Request");
+  axios
+    .delete("https://jsonplaceholder.typicode.com/todos/1")
+    .then((res) => {
+      showOutput(res);
+    })
+    .catch((err) => console.error(err));
 }
 
 // SIMULTANEOUS DATA
 function getData() {
-  console.log("Simultaneous Request");
+  axios
+    .all([
+      axios.get("https://jsonplaceholder.typicode.com/todos?_limit=5"),
+      axios.get("https://jsonplaceholder.typicode.com/posts?_limit=5"),
+    ])
+    // .then((res) => {
+    //   console.log(res[0]);
+    //   console.log(res[1]);
+    //   showOutput(res[1]);
+    // })
+    .then(axios.spread((todos, posts) => showOutput(posts)))
+    .catch((err) => console.log(err));
 }
 
 // CUSTOM HEADERS
 function customHeaders() {
-  console.log("Custom Headers");
+  const config = {
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: "someToken",
+    },
+  };
+
+  axios
+    .post(
+      "https://jsonplaceholder.typicode.com/todos",
+      {
+        title: "New Todo",
+        completed: false,
+      },
+      config
+    )
+    .then((res) => showOutput(res))
+    .catch((err) => console.error(err));
 }
 
 // TRANSFORMING REQUESTS & RESPONSES
+
+//this is like a loger at every request see in the console
+axios.interceptors.request.use(
+  (config) => {
+    console.log(
+      `${config.method.toUpperCase()} request sent to ${
+        config.url
+      } at ${new Date().getTime()}`
+    );
+
+    return config;
+  },
+  (error) => {
+    return Promise.reject(error);
+  }
+);
+
 function transformResponse() {
-  console.log("Transform Response");
+  const option = {
+    method: "post",
+    url: "https://jsonplaceholder.typicode.com/todos",
+    data: {
+      title: "hello worlddd...",
+    },
+    transformResponse: axios.defaults.transformResponse.concat((data) => {
+      data.title = data.title.toUpperCase();
+      return data;
+    }),
+  };
+  axios(option).then((res) => showOutput(res));
 }
 
 // ERROR HANDLING
@@ -102,6 +164,7 @@ function cancelToken() {
 
 // Show output in browser
 function showOutput(res) {
+  console.log(res);
   document.getElementById("res").innerHTML = `
   <div class="card card-body mb-4">
     <h5>Status: ${res.status}</h5>

@@ -56,3 +56,27 @@ console.log("🔥 arrays");
 // myAwesomeArray.map((x) => (x + x) * 10000000000);
 // const endMap = performance.now();
 // console.log(`Speed [map]: ${endMap - startMap} miliseconds`);
+
+//🔥---- very very important---🔥
+
+//Reduce Method
+
+//flatter an array to covert the 3d or 2d array into a
+//single dimentional array
+// The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
+// The reducer function takes four arguments:
+
+// Accumulator
+// Current Value
+// Current Index
+// Source Array
+
+// // Arrow function
+// reduce((accumulator, currentValue) => { ... } )
+// reduce((accumulator, currentValue, index) => { ... } )
+// reduce((accumulator, currentValue, index, array) => { ... } )
+// reduce((accumulator, currentValue, index, array) => { ... }, initialValue)
+
+// Your reducer function's returned value is assigned to the accumulator
+
+//single value chahey to reducer ko yaad kre ex sum of all element ,average,product etc

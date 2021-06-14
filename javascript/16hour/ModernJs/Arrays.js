@@ -120,6 +120,7 @@ var myarray = [
 // 4️⃣ Array.prototypes.includes()
 // The includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate.
 
+//check strick equality
 // includes(searchElement);
 // includes(searchElement, fromIndex);
 
@@ -134,6 +135,11 @@ var myarray = [
 // // expected output: true
 
 // console.log(pets.includes("at"));
+
+//strick equality
+// const arr = [1, 2, 3];
+// arr.push("5");
+// console.log(arr.includes(5));//false because "5!==5"
 
 //important
 // If fromIndex is greater than or equal to the length of the array, false is returned. The array will not be searched.
