@@ -95,4 +95,4 @@ function add() {
   console.log(a); //20
 }
 add();
-console.log(a);
+console.log(a); //20

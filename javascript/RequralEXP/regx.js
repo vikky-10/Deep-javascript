@@ -68,14 +68,36 @@
 /*✋*/
 // 2)test() return tru or false
 // The string:
-var str = 'Hello world!';
+// var str = 'Hello world!';
 
-// Look for "Hello"
-var patt = /Hello/g;
-var result = patt.test(str);
-console.log(result); //true
+// // Look for "Hello"
+// var patt = /Hello/g;
+// var result = patt.test(str);
+// console.log(result); //true
 
-// Look for "W3Schools"
-patt2 = /W3Schools/g;
-result2 = patt2.test(str);
-console.log(result2); //false
+// // Look for "W3Schools"
+// patt2 = /W3Schools/g;
+// result2 = patt2.test(str);
+// console.log(result2); //false
+
+/*✋*/
+// match() return an array of result or null
+// let a = 'The best things in life are free';
+// let reg = new RegExp('e');
+// // let result = reg.match(a);//==>wron syntax
+// let result = a.match(reg);
+
+// console.log(result);
+// [
+//   'e',
+//   index: 2,
+//   input: 'The best things in life are free',
+//   groups: undefined
+// ]
+
+let a = 'The best things in life are free';
+let reg = /e/g;
+
+let result = a.match(reg);
+
+console.log(result); //[ 'e', 'e', 'e', 'e', 'e', 'e' ]

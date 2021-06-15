@@ -209,3 +209,93 @@ console.log('🔥 string......');
 
 // console.log(res);//resulting
 // console.log(str);//original str
+
+// 7️⃣ substr()
+// The substr() method returns a portion of the string, starting at the specified index and extending for a given number of characters afterwards
+
+// substr(start);
+// substr(start, length);
+
+// const str = 'Mozilla';
+
+// console.log(str.substr(1, 2));
+// // expected output: "oz"
+
+// console.log(str.substr(2));
+// // expected output: "zilla"
+
+// console.log(str.substr(-2));
+// // expected output: "la"
+
+// console.log(str.substr(-5, 2));
+// // expected output: "zi"
+
+// console.log(str.substr(-50, 2));
+// // expected output: "Mo"
+
+// console.log(str.substr(1, 100));
+// // expected output: "ozilla"
+
+// console.log(str.substr(21, 100));
+// // expected output: ""
+
+// console.log(str.substr(-21, 100));
+// // expected output: "Mozilla"
+
+// 8️⃣ Extracting string characters
+// charAt()
+// charCodeAt()
+// property access []
+
+// charAt();
+// The String object's charAt() method returns a new string consisting of the single UTF-16 code unit located at the specified offset into the string.
+// const sentence = 'The quick brown fox jumps over the lazy dog.';
+
+// const index = 4;
+// const ch = sentence.charAt(index);
+// console.log(`The character at index ${index} is ${ch}`);
+// console.log(typeof ch);//string
+// expected output: "The character at index 4 is q"
+
+// 9️⃣ charCodeAt()
+// The charCodeAt() method returns an integer between 0 and 65535 representing the UTF-16 code unit at the given index.
+
+// const sentence = 'The quick brown fox jumps over the lazy dog.';
+
+// const index = 4;
+// const ch = sentence.charAt(index);
+// const unicode = sentence.charCodeAt(index);
+// console.log(`The character code ${unicode} is equal to ${ch}`);
+// // expected output: "The character code 113 is equal to q"
+// console.log(typeof unicode);
+
+// var str = 'Hello World!';
+// console.log(str[0]); //H
+
+// 🔟 usefull methods
+// let name = 'vikky singh';
+// console.log(name);
+// console.log(name.toUpperCase());
+// console.log(name);
+// let lastname = 'SINGH';
+// console.log(lastname.toLowerCase());
+
+//concat()
+// let firstname = 'vikky ';
+// let lastname = 'singh';
+// console.log(firstname.concat(lastname));
+
+//trim() v.v.imp
+//remove whitespace from both side
+// var str = '   vikky singh     ';
+// console.log(str);
+// console.log(str.trim());
+
+//convert string to an array
+//split()
+
+// var text = 'vikky singh';
+// console.log(text.split()); //['vikky singh '];
+// console.log(text.split(' ')); //['vikky', 'singh'];
+// let name = 'v,i,k,k,y';
+// console.log(name.split(','));//['v', 'i', 'k', 'k', 'y'];
