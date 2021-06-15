@@ -80,3 +80,21 @@ console.log("🔥 arrays");
 // Your reducer function's returned value is assigned to the accumulator
 
 //single value chahey to reducer ko yaad kre ex sum of all element ,average,product etc
+
+// let arr = [5, 6, 2];
+// let sum = arr.reduce((accumulator, el, idx, arr) => {
+//   return (accumulator += el);
+// }, 8);
+// console.log(sum); //value assign in accumulatoe
+
+// how to fatten an array
+// const arr = [
+//   ["zone1", "zone2"],
+//   ["zone3", "zone4"],
+//   ["zone5", "zone5"],
+//   ["zone6", "zone6"],
+// ];
+// let flatten = arr.reduce((acc, curval) => {
+//   return acc.concat(curval);
+// });
+// console.log(flatten);
