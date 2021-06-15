@@ -178,12 +178,14 @@ console.log('🔥 object....');
 //------***----
 //------***----
 //------***----
-//challenge
+//challenge v.v.imp
 //output of
-const obj = {
-  myage: 20,
-  myname: () => {
-    console.log(this);
-  },
-};
-obj.myname();
+//arrow function
+//this object ko use in kr skte in arrow function
+// const obj = {
+//   myage: 20,
+//   myname: () => {
+//     console.log(this);//window object 🤔
+//   },
+// };
+// obj.myname();
