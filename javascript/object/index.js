@@ -112,3 +112,78 @@ console.log('🔥 object....');
 // console.log(jones.age);//20 new age property
 
 // console.log(jones.getsummary());
+
+//improvment
+// let biodata = {
+//   firstname: 'vikky',
+//   lastname: 'singh',
+//   myAge: 20,
+//   //   getData: function () {
+//   //     console.log(`my name: ${biodata.firstname} and my age is ${biodata.myAge}`);
+//   //   },
+//   //without function keyword
+//   getData() {
+//     console.log(`my name: ${biodata.firstname} and my age is ${biodata.myAge}`);
+//   },
+// };
+// biodata.getData();
+
+// let biodata = {
+//   name: {
+//     firstname: 'vikky',
+//     lastname: 'singh',
+//     status: 'active',
+//   },
+
+//   myAge: 20,
+//   getData() {
+//     console.log(`my name: ${biodata.firstname} and my age is ${biodata.myAge}`);
+//   },
+// };
+// biodata.getData();
+// console.log(biodata.name.status);
+// 🔢
+//👲 this object ==> it contains the current context
+// console.log(this);//window object se bilong kr rha hai abhi beacuse window is the gloable object
+
+// it means window ke property ko access kr skta hai
+
+// console.log(this.alert('vikky'));
+//------***----
+//------***----
+//------***----
+// function myfunc() {
+//   console.log(this);//abhi bhi this ka context window he hai na ke function keep in mind
+// }
+// myfunc();
+//------***----
+//------***----
+//------***----
+// var myname = 'vikky';
+// function myfunc() {
+//   console.log(this.myname);//vikky kuki this global ko bilong kr rha hai aur variable bhi gloable hai
+// }
+// myfunc();
+//------***----
+//------***----
+//------***----
+// const obj = {
+//   myage: 20,
+//   myname() {
+//     console.log(this); //obj object { myage: 20, myname: [Function: myname] }
+//   },
+// };
+// obj.myname();
+
+//------***----
+//------***----
+//------***----
+//challenge
+//output of
+const obj = {
+  myage: 20,
+  myname: () => {
+    console.log(this);
+  },
+};
+obj.myname();
