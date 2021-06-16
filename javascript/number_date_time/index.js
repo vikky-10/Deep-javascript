@@ -32,3 +32,63 @@ console.log('🔥 Date and time Api...');
 // console.log(Date.now()); //1623791292950
 // var d = new Date(1623791292950);
 // console.log(d.toLocaleString()); //6/16/2021, 2:38:12 AM
+
+// console.log(new Date(0).toLocaleString()); //1/1/1970, 5:30:00 AM
+// console.log(new Date(86400000 * 2).toLocaleString()); //1/3/1970, 5:30:00 AM
+
+//----*****--------
+//----*****--------
+//----*****--------
+// Date Methods
+// const curDate = new Date();
+// console.log(curDate.toLocaleString());
+// console.log(curDate.getFullYear()); //2021
+// console.log(curDate.getMonth()); //5
+// console.log(curDate.getDate()); //16
+// console.log(curDate.getDay()); //3(wednesday)
+
+//set indivisual date
+//all ans in milliseconds
+// const curDate = new Date();
+// console.log(curDate.setFullYear(2022)); //1655357201859;
+//setFullYear() method can optionally set month and day
+// console.log(curDate.setFullYear(2022, 10, 5));
+// console.log(curDate.setMonth(10));
+// console.log(curDate.setDate(5));
+
+//we need to change millisec to  proper format
+// const d = curDate.setFullYear(2022);
+// const formatted = new Date(d).toLocaleString();
+// console.log(formatted);//6/16/2022, 10:56:41 AM
+
+//similarly for all------****---
+
+// Time ⏲️ Methods
+// const curTime = new Date();
+// console.log(curTime.getTime()); //1623821418486
+// //miliseconds since jan 1 1970
+// console.log(curTime.getHours()); //[0-23]
+// console.log(curTime.getMinutes());
+// console.log(curTime.getSeconds());
+// console.log(curTime.getMilliseconds());
+
+//----***-----
+//----***-----
+//----***-----
+// set method in tIME()
+// const curTime = new Date();
+// console.log(curTime.setTime());
+//NaN
+
+//all output in milliseconds
+//for getting formattedd do what i done in date
+
+// console.log(curTime.setMinutes(5));
+// console.log(curTime.setSeconds(5));
+// console.log(curTime.setSeconds(5));
+// console.log(curTime.setMilliseconds(5));
+
+//challenge
+// console.log(new Date().toLocaleDateString()); //6/16/2021
+// console.log(new Date().toLocaleTimeString()); //11:45:00 AM
+// console.log(new Date().toLocaleString()); //6/16/2021, 11:45:27 AM

@@ -81,18 +81,19 @@ console.log('🔥 Regular expresstion....');
 //---**---
 //---**---
 //---**---
-// a = 10;
-// function add(a) {
-//   console.log(a); //error
+a = 10;
+function add(a) {
+  console.log(a); //30
+  a = 20; //local wala hai jo mne pass kiya hai
+  console.log(a); //20
+}
+add(30);
+console.log(a); //10
+// var a = 10;
+// function add() {
+//   console.log(a); //10
 //   a = 20;
 //   console.log(a); //20
 // }
-// add(30);
-// var a = 10;
-function add() {
-  //   console.log(a); //10
-  a = 20;
-  console.log(a); //20
-}
-add();
-console.log(a); //20
+// add();
+// console.log(a); //20
