@@ -27,34 +27,37 @@
 //callback
 
 console.log("start");
+// function login(email, password) {
+//   setTimeout(() => {
+//     console.log("Now WE HAVE A DATA");
+//     //THIS IS NOT COME BACK
+//     return { userEmail: email, userPassword: password };
+//   }, 5000);
+// }
+
+// const user = login("abc@abc.com", 145236);
+// console.log(user);
+// start
+// undefined
+// end
+// Now WE HAVE A DATA
+
+//TO SOLVE THIS ISSUES
+//need callback
 function login(email, password, callback) {
   setTimeout(() => {
-    console.log("now we have the darta");
+    console.log("Now WE HAVE A DATA");
+    //THIS IS NOT COME BACK
+    //other then returning
+    //add callback
     callback({ userEmail: email, userPassword: password });
   }, 5000);
 }
 
-function videos(email, callback) {
-  setTimeout(() => {
-    callback(["video1", "video2", "video3"]);
-  }, 2000);
-}
-
-function videodetail(video, callback) {
-  setTimeout(() => {
-    callback("title of the video");
-  }, 2000);
-}
-
 const user = login("abc@abc.com", 145236, (user) => {
   console.log(user);
-  videos(user.email, (videos) => {
-    console.log(videos);
-    videodetail(videos[0], (title) => {
-      console.log(title);
-    });
-  });
 });
+console.log(user);
 
 // when we keep stacking this it beacome a callback hell
 
