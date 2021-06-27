@@ -1,19 +1,21 @@
-const path = require("path");
+const { readFileSync, writeFileSync } = require("fs");
+console.log("start");
+const first = readFileSync("./testingdir/first.txt", "utf8");
+const sec = readFileSync("./testingdir/sec.txt", "utf8");
 
-console.log(path.sep); // '\'
+// console.log(first, sec);
 
-const filepath = path.join("/testingdir", "testingsubedir", "test.txt");
-console.log(filepath);
-// \testingdir\testingsubedir\test.txt
-const base = path.basename(filepath);
-console.log(base); // test.txt
+// if file is not present node create file and add content in it
+// if file is already present it overwrite the content
+// writeFileSync("./testingdir/result.txt", "hello this is result file");
 
-const absolute = path.resolve(
-  __dirname,
-  "testingdir",
-  "testingsubedir",
-  "test.txt"
+// for append in file
+writeFileSync(
+  "./testingdir/result.txt",
+  "hello this  is result file vvv good",
+  {
+    flag: "a",
+  }
 );
-console.log(absolute);
-
-//F:\Javascript\Node&&express\node\testingdir\testingsubedir\test.txt
+console.log("done with this task");
+console.log("start the next task");
