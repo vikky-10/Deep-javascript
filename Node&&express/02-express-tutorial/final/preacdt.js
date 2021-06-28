@@ -4,10 +4,15 @@ const path = require("path");
 const app = express();
 
 // setup static and middleware
-app.use(express.static("./public"));
+app.use(express.static("../public"));
 
 app.get("/", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "./navbar-app/index.html"));
+  //this is wrong way
+  //  res.send("../navbar-app/index.html");
+  //this is also wrong
+  //   res.send(path.resolve(__dirname, "../navbar-app/index.html"));
+
+  res.sendFile(path.resolve(__dirname, "../navbar-app/index.html"));
 });
 
 app.all("*", (req, res) => {
