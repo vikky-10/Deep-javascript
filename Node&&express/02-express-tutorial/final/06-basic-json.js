@@ -3,7 +3,6 @@ const app = express();
 const { products } = require("../data");
 app.get("/", (req, res) => {
   res.json(products);
-  // res.send(products);
 });
 
 app.listen(5000, () => {

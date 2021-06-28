@@ -6,6 +6,8 @@ const app = express();
 // setup static and middleware
 app.use(express.static("../public"));
 
+//static assets means the assets server doesnot need to change it
+
 app.get("/", (req, res) => {
   //this is wrong way
   //  res.send("../navbar-app/index.html");
