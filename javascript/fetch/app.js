@@ -14,13 +14,16 @@ searchBar.addEventListener('keyup', e => {
 });
 
 const loadCharacters = async () => {
-  try {
-    const res = await fetch('https://hp-api.herokuapp.com/api/characters');
-    hpCharacters = await res.json();
-    displayCharacters(hpCharacters);
-  } catch (err) {
-    console.error(err);
-  }
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      hpCharacters = JSON.parse(this.responseText);
+      console.log(hpCharacters);
+      displayCharacters(hpCharacters);
+    }
+  };
+  xmlhttp.open('GET', 'https://hp-api.herokuapp.com/api/characters', true);
+  xmlhttp.send();
 };
 
 const displayCharacters = characters => {
@@ -34,10 +37,7 @@ const displayCharacters = characters => {
             </li>
         `;
     })
-    .join(''); //The join() method creates and returns a new string by concatenating all of the elements in an array
-
-  //allseparated by commas or a specified separator string
-  //   console.log(htmlString);
+    .join('');
   charactersList.innerHTML = htmlString;
 };
 

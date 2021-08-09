@@ -71,3 +71,7 @@ const add = (x: number, y: number, z: number | string = 10) => {
 // or we can pass default value to it (x: number, y: number, z: number | string=10  ) when we pass default value not use ?
 // pass optional parameter in last
 add(7, 8);
+
+
+
+

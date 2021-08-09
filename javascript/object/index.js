@@ -189,3 +189,54 @@ console.log('🔥 object....');
 //   },
 // };
 // obj.myname();
+
+// const obj1 = {
+//   firstname: 'vikky singh',
+//   obj2: {
+//     firstname: 'vikky',
+//     happy: function () {
+//       console.log(this); //obj2
+//       console.log(this.firstname); //vikky
+//     },
+//     // happy: () => {
+//     //   console.log(this);//{}
+//     //   console.log(this.firstname);//undefined
+//     // },
+//     // happy: function () {
+//     //   console.log(this); //glowble
+//     //   console.log(this.firstname); //undefined
+//     // },
+//     happy: () => {
+//       console.log(this); //{}
+//       console.log(this.firstname); //undefined
+//     },
+//   },
+// };
+// obj1.obj2.happy();
+// regural function
+// const ans = obj1.obj2.happy;
+// ans();
+// arrow function
+// const ans = obj1.obj2.happy;
+// ans();
+
+class abc {
+  firstname = { name: 'vikky' };
+
+  //   abcd() {
+  //     console.log(this);//undefined
+  //     console.log(this.firstname.name);
+  //   }
+  abcd = () => {
+    console.log(this); //abc
+    console.log(this.firstname.name); //vikky
+  };
+}
+// const obj = new abc();
+// obj.abcd();//vikky
+// regular function
+// const ans = obj.abcd;
+// ans();
+// arrow function
+// const ans = obj.abcd;
+// ans();
