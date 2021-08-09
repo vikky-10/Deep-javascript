@@ -25,13 +25,50 @@ type positiveodd = 1 | 3 | 5 | 7 | 9;
 // console.log(res1);
 // console.log(res);
 
-interface Point {
-  x: number;
-  y: number;
-}
+// interface Point {
+//   x: number;
+//   y: number;
+// }
 
-function logPoints(p: Point) {
-  console.log(`${p.x},${p.y}`);
-}
-const Points = { x: 10, y: 20 };
-logPoints(Points);
+// function logPoints(p: Point) {
+//   console.log(`${p.x},${p.y}`);
+// }
+// const Points = { x: 10, y: 20 };
+// logPoints(Points);
+
+// let c=6;
+// c=10;
+// const y=6;
+// y=40;//not possible that's why typescript  make more specific assumption here that why when we hover over it show const y: 6 not const y: number unlink let x: number
+// let x: number = 10;
+
+// function add(a:number, b:number){
+
+// }
+
+// add(add(1,2),3)//error add(1,2) return void which is not assign to a
+// add(add(1,2),3)
+// add(add(1,2),3)
+// add(add(1,2),3)
+// add(add(1,2),3)
+// add(add(1,2),3)
+// add(add(1,2),3)
+// add(add(1,2),3)
+// add(add(1,2),3)
+
+//fixing lot of  place fix it in one place
+// function add(a: number, b: number): number {
+//   return a + b;
+// }
+
+// add(add(1, 2), 3); //error add(1,2) return void which is not assign to a
+// add(add(1, 2), 3);
+// add(add(1, 2), 3);
+// add(add(1, 2), 3);
+// add(add(1, 2), 3);
+// add(add(1, 2), 3);
+// add(add(1, 2), 3);
+// add(add(1, 2), 3);
+// add(add(1, 2), 3);
+
+//thats why function return type important
