@@ -1,4 +1,4 @@
-console.log("🔥 arrays");
+console.log('🔥 arrays');
 
 //🔥 Map()
 //The map() method creates a new array
@@ -98,3 +98,59 @@ console.log("🔥 arrays");
 //   return acc.concat(curval);
 // });
 // console.log(flatten);
+
+//********************** */
+
+// Advance Hacks 🔥 🔥
+
+//********************** */
+
+//Remove falsy value from array
+let namesArray = [
+  'naruto',
+  'saske',
+  'sakura',
+  'eruka',
+  null,
+  0,
+  false,
+  'kakashi',
+  true,
+];
+
+//passing Boolean in filter() will remove all falsy value
+// let filteredArray = namesArray.filter(Boolean);
+// console.log(filteredArray);
+
+//Convert any value to boolean
+// Using !! in front of any value will convert that  value to boolean.
+// console.log(!!'hii'); //true
+// console.log(!!0); //false
+// console.log(!!1); //true
+// console.log(!!undefined); //false
+
+// Resizing array
+
+// let array = ['jhon', 'choji', 'danile', 'jason'];
+// array.length = 2;
+// console.log(array);
+
+//flatten multi-dimentional arrays
+
+//using flat()
+//but flat() method only flatten only one level
+
+// let onelevel = ['a', 'b', ['c', 'd'], 'e', [['f', 'g', 'h']]];
+// console.log(onelevel.flat());
+// ['a', 'b', 'c', 'd', 'e', ['f', 'g', 'h']];
+
+// let onelevel = ['a', 'b', ['c', 'd'], 'e', [['f', 'g', 'h']]];
+// console.log(onelevel.flat(Infinity));
+// ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
+
+//Replace all occurrences of string
+
+let sentence =
+  ' MUst follow the page, page uploads awesome content  so must !!';
+
+console.log(sentence.replace(/must/g, 'sparshcodes'));
