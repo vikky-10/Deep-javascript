@@ -106,17 +106,17 @@ console.log('🔥 arrays');
 //********************** */
 
 //Remove falsy value from array
-let namesArray = [
-  'naruto',
-  'saske',
-  'sakura',
-  'eruka',
-  null,
-  0,
-  false,
-  'kakashi',
-  true,
-];
+// let namesArray = [
+//   'naruto',
+//   'saske',
+//   'sakura',
+//   'eruka',
+//   null,
+//   0,
+//   false,
+//   'kakashi',
+//   true,
+// ];
 
 //passing Boolean in filter() will remove all falsy value
 // let filteredArray = namesArray.filter(Boolean);
@@ -150,7 +150,21 @@ let namesArray = [
 
 //Replace all occurrences of string
 
-let sentence =
-  ' MUst follow the page, page uploads awesome content  so must !!';
+// let sentence =
+//   ' MUst follow the page, page uploads awesome content  so must !!';
 
-console.log(sentence.replace(/must/g, 'sparshcodes'));
+// console.log(sentence.replace(/must/g, 'sparshcodes'));
+
+// check performance of any task
+
+// perfomance.now()
+//method to check how much milliseconds it took to complete a specific task
+
+let time0 = performance.now();
+
+for (let i = 0; i < 5000; i++) {
+  console.log(i);
+}
+let time1 = performance.now();
+console.log(time1 - time0);
+ 
