@@ -160,11 +160,120 @@ console.log('🔥 arrays');
 // perfomance.now()
 //method to check how much milliseconds it took to complete a specific task
 
-let time0 = performance.now();
+// let time0 = performance.now();
 
-for (let i = 0; i < 5000; i++) {
-  console.log(i);
-}
-let time1 = performance.now();
-console.log(time1 - time0);
+// for (let i = 0; i < 5000; i++) {
+//   console.log(i);
+// }
+// let time1 = performance.now();
+// console.log(time1 - time0);
  
+
+
+// String to Array
+
+// let String ="travel";
+
+// option1
+// let ans=String.split('');
+//  console.log(ans);
+
+//  option2
+// console.log([...String])
+
+// option3
+// let ans3= Array.from(String);
+// console.log(ans3);
+
+// option4
+// let ans4=Object.assign([], String);
+
+
+
+// before understanding Object.assign
+// understand what do you mean by
+// Enumerable Property
+
+
+// The propertyIsEnumerable() 
+// method returns a Boolean 
+// indicating whether the specified
+//  property is enumerable and is the object's own property.
+
+// enumerable : that can be counted
+
+// const object1 = {};
+// const array1 = [];
+// object1.property1 = 42;
+// array1[0] = 42;
+
+// console.log(object1.propertyIsEnumerable('property1'));
+// expected output: true
+
+// console.log(array1.propertyIsEnumerable(0));
+// expected output: true
+
+// console.log(array1.propertyIsEnumerable('length'));
+// expected output: false
+
+
+// Every object has a propertyIsEnumerable method. 
+// This method can determine whether the specified property in 
+// an object can be enumerated by a for...in loop,
+//  with the exception of properties inherited 
+//  through the prototype chain. 
+//  If the object does not have the specified property, 
+//  this method returns false
+
+// User-defined vs. built-in objects
+
+var a=['is enumerabnle'];
+
+
+let ans=a.propertyIsEnumerable(0)
+
+let ans1= a.propertyIsEnumerable('length');
+ 
+let ans2= Math.propertyIsEnumerable("random");
+
+let ans3= this.propertyIsEnumerable("Math");
+
+console.log(ans, ans1, ans2, ans3)// true false false false
+
+
+
+
+// The Object.assign() method copies all enumerable
+//  own properties from one or more source objects to a 
+//  target object. It returns the modified target object.
+
+// Convert ObJECT TO AN aRRAY
+
+const categories = {web: 'javascript',
+app:'Android'};
+
+// The Object.keys() method returns an array 
+// of a given object's own enumerable property names, 
+// iterated in the same order that a normal loop would.
+
+// const object1 = {
+//   a: 'somestring',
+//   b: 42,
+//   c: false
+// };
+
+// console.log(Object.keys(object1));
+// expected output: Array ["a", "b", "c"]
+
+
+// const answers=Object.keys(categories);
+// console.log(answers);//[web, app]
+// console.log(categories.web)//javascript
+// Object.keys(categories).forEach(el=>console.log(el))
+
+
+
+
+Object.values(categories).forEach(el=>console.log(el))//javascript, Android
+
+Object.entries(categories)//[['web', 'javascript'],['app',''Android']]
