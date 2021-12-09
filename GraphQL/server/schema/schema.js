@@ -19,6 +19,10 @@ const BookType = new GraphQLObjectType({
   }),
 });
 
+// root query where we start  sometime it called query
+// Rootquery responsible how we jump into the graph
+// Starting Point
+
 const RootQuery = new GraphQLObjectType({
   name: "RootQueryType",
   fields: {
@@ -32,6 +36,8 @@ const RootQuery = new GraphQLObjectType({
     },
   },
 });
+
+// Here I exporting root query scema
 module.exports = new GraphQLSchema({
   query: RootQuery,
 });

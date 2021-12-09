@@ -23,3 +23,12 @@ for example:
 /user-------------------  /grphql
 /follower---------------  /grphql
 /posts------------------/graphql
+
+
+there is different way to make server 
+mainly we are using 2 as javascript developer one is using apolo server which i use in project1 and project 2
+In this I try to implement express-graphql
+
+✔✔🎯🎯
+express-graphql helps express to understand graphql it also helps express to deal with graphql api
+

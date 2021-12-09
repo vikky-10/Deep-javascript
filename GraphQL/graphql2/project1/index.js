@@ -4,6 +4,9 @@ const { ApolloServer, gql } = require("apollo-server");
 
 // define a typedefs or schema
 const typeDefs = gql`
+  type Country {
+    name: String!
+  }
   type Query {
     hello: String
     numberofappe: Int
@@ -21,6 +24,7 @@ const typeDefs = gql`
 
     # if you want it also not return null so add !
     newArr: [String!]!
+    Cname: Country!
   }
 `;
 // resolver
@@ -42,6 +46,12 @@ const resolvers = {
       return ["Hello", "my", "Friend"];
       // return ["Hello", null, "Friend"];
       // return null;
+    },
+    Cname: () => {
+      const Coun = {
+        name: "India",
+      };
+      return Coun;
     },
   },
 };

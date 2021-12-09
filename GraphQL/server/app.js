@@ -1,8 +1,12 @@
 const express = require("express");
+
 const { graphqlHTTP } = require("express-graphql");
 const schema = require("./schema/schema");
 const app = express();
 
+// when expree see /graphql routes it understand 
+// ke we want to communicate with the graphql server
+// we pass function in miiddleware
 app.use(
   "/graphql",
   graphqlHTTP({
