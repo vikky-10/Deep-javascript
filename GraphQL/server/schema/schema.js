@@ -1,4 +1,5 @@
 const graphql = require("graphql");
+const { result } = require("lodash");
 const _ = require("lodash");
 
 const { GraphQLObjectType, GraphQLString, GraphQLSchema } = graphql;
@@ -36,6 +37,26 @@ const RootQuery = new GraphQLObjectType({
     },
   },
 });
+
+// query for
+// {
+//   book(id: "2"){
+//     name
+//     genre
+//     id
+//   }
+// }
+
+// result
+// {
+//   "data": {
+//     "book": {
+//       "name": "singh",
+//       "genre": "Fanast",
+//       "id": "2"
+//     }
+//   }
+// }
 
 // Here I exporting root query scema
 module.exports = new GraphQLSchema({
