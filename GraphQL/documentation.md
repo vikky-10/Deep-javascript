@@ -32,3 +32,13 @@ In this I try to implement express-graphql
 ✔✔🎯🎯
 express-graphql helps express to understand graphql it also helps express to deal with graphql api
 
+Type Relation¯\_(ツ)_/¯¯\_(ツ)_/¯
+Relation between differnet object type for example a author has many books and many books have same author
+
+This type of relation ship
+
+
+✔✔🌀🌀🌀
+Q) why we wrap the field inside a function?
+Ans: if we not wrap the field inside a function then when we define different types insid any object type it throw an error if we change the order of different type then also it throw an error In function what happend na order not matter.
+

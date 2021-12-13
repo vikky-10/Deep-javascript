@@ -7,6 +7,7 @@ const resolvers = {
     },
     user: (parent, args) => {
       const id = args.id;
+      console.log(id);
       const user = _.find(UserList, { id: Number(id) });
       return user;
     },
