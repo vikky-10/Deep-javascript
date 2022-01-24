@@ -68,3 +68,36 @@
 //[ [ 'name', 'vikky' ], [ 'lastname', 'singh' ] ]
 // console.log(Object.fromEntries(arrObjject));
 //{ name: 'vikky', lastname: 'singh' }
+
+// CONSOLE.TABLE
+
+const animals = [
+  { animal: 'Horse', name: 'Henry', age: 43 },
+  { animal: 'Dog', name: 'Fred', age: 13 },
+  { animal: 'Cat', name: 'Frodo', age: 18 },
+];
+
+console.table(animals);
+
+// Destructure Into Existing VARIABLE
+
+const user = { handle: 'vikky', profile: 'Github' };
+
+let handle;
+let profile;
+
+({ handle, profile } = user);
+
+console.log(handle, profile);
+
+// Ading A leading zeros to date is often super tedious
+
+const date = new Date();
+const day = date.getDay().toString().padStart('2', 0);
+console.log(day);
+
+// const html = String.raw`
+// <p>Hello, this is vikky singh</p>
+// <img src="some.cdn.com/s8a882.png"/>
+// <p>THIS IS USE TO SHOW SYNTAX HIGHLIGHT</p>
+// `
