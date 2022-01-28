@@ -71,33 +71,69 @@
 
 // CONSOLE.TABLE
 
-const animals = [
-  { animal: 'Horse', name: 'Henry', age: 43 },
-  { animal: 'Dog', name: 'Fred', age: 13 },
-  { animal: 'Cat', name: 'Frodo', age: 18 },
-];
+// const animals = [
+//   { animal: 'Horse', name: 'Henry', age: 43 },
+//   { animal: 'Dog', name: 'Fred', age: 13 },
+//   { animal: 'Cat', name: 'Frodo', age: 18 },
+// ];
 
-console.table(animals);
+// console.table(animals);
 
 // Destructure Into Existing VARIABLE
 
-const user = { handle: 'vikky', profile: 'Github' };
+// const user = { handle: 'vikky', profile: 'Github' };
 
-let handle;
-let profile;
+// let handle;
+// let profile;
 
-({ handle, profile } = user);
+// ({ handle, profile } = user);
 
-console.log(handle, profile);
+// console.log(handle, profile);
 
 // Ading A leading zeros to date is often super tedious
 
-const date = new Date();
-const day = date.getDay().toString().padStart('2', 0);
-console.log(day);
+// const date = new Date();
+// const day = date.getDay().toString().padStart('2', 0);
+// console.log(day);
 
 // const html = String.raw`
 // <p>Hello, this is vikky singh</p>
 // <img src="some.cdn.com/s8a882.png"/>
 // <p>THIS IS USE TO SHOW SYNTAX HIGHLIGHT</p>
 // `
+
+// Working with params
+
+//  ?post=1234&action=edit
+
+// const params = new URLSearchParams(window.location.search);
+
+// const postId=params.get('post');
+// //1234
+
+// if(postId&&params.has('action')) {
+//   params.append('active', '1');
+// }
+
+// const newParams=params.tostring();
+
+// Optional chaining in functions
+
+function someFunction() {
+  console.log('Hii, there');
+}
+
+someFunction?.(); //optional chaining on a fucnction call
+
+// formate the output of json.stringify
+
+const someObject = {
+  name: 'vikky singh',
+  age: 21,
+  online: true,
+};
+
+console.log(JSON.stringify(someObject, null, 2));
+
+// passing the number '2' as the third argument will
+// formate the outpu with 2 spaces of indentation

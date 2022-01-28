@@ -1,4 +1,4 @@
-console.log("🔥 arrays");
+console.log('🔥 arrays');
 
 //1️⃣ The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end
 
@@ -163,19 +163,19 @@ console.log("🔥 arrays");
 // array1.sort();
 // console.log(array1);
 
-let Months = [
-  "jan",
-  "march",
-  "feb",
-  "june",
-  "april",
-  "july",
-  "may",
-  "December",
-];
-let pendingmonths = ["aug", "sep", "oct", "nov"];
+// let Months = [
+//   "jan",
+//   "march",
+//   "feb",
+//   "june",
+//   "april",
+//   "july",
+//   "may",
+//   "December",
+// ];
+// let pendingmonths = ["aug", "sep", "oct", "nov"];
 
-let fa = Months.concat(pendingmonths);
+// let fa = Months.concat(pendingmonths);
 // console.log(fa);
 // [
 //   "jan",
@@ -206,14 +206,14 @@ let fa = Months.concat(pendingmonths);
 
 // function for reuse
 
-var swapArrayElements = function (a, x, y) {
-  if (a.length === 1) return a;
-  a.splice(y, 1, a.splice(x, 1, a[y])[0]);
-  return a;
-};
+// var swapArrayElements = function (a, x, y) {
+//   if (a.length === 1) return a;
+//   a.splice(y, 1, a.splice(x, 1, a[y])[0]);
+//   return a;
+// };
 
 ////feb-march swap
-swapArrayElements(fa, fa.indexOf("feb"), fa.indexOf("march"));
+// swapArrayElements(fa, fa.indexOf("feb"), fa.indexOf("march"));
 
 // console.log(fa);
 
@@ -249,7 +249,7 @@ swapArrayElements(fa, fa.indexOf("feb"), fa.indexOf("march"));
 // ];
 
 // june april swap
-swapArrayElements(fa, fa.indexOf("june"), fa.indexOf("april"));
+// swapArrayElements(fa, fa.indexOf("june"), fa.indexOf("april"));
 // console.log(fa);
 // [
 //   "jan",
@@ -266,7 +266,7 @@ swapArrayElements(fa, fa.indexOf("june"), fa.indexOf("april"));
 //   "nov",
 // ];
 // may - june swap
-swapArrayElements(fa, fa.indexOf("june"), fa.indexOf("may"));
+// swapArrayElements(fa, fa.indexOf("june"), fa.indexOf("may"));
 // console.log(fa);
 
 // [
@@ -284,7 +284,7 @@ swapArrayElements(fa, fa.indexOf("june"), fa.indexOf("may"));
 //   "nov",
 // ];
 // july - june swap
-swapArrayElements(fa, fa.indexOf("june"), fa.indexOf("july"));
+// swapArrayElements(fa, fa.indexOf("june"), fa.indexOf("july"));
 // console.log(fa);
 // [
 //   "jan",
@@ -302,8 +302,8 @@ swapArrayElements(fa, fa.indexOf("june"), fa.indexOf("july"));
 // ];
 
 //adding dec at last
-fa.splice(fa.indexOf("December"), 1);
-fa.splice(fa.length, 0, "December");
+// fa.splice(fa.indexOf("December"), 1);
+// fa.splice(fa.length, 0, "December");
 
 // console.log(fa);
 // [
@@ -325,3 +325,9 @@ fa.splice(fa.length, 0, "December");
 // const ans = fa.splice(0, Infinity);
 // console.log(fa);//[]
 // console.log(ans);
+
+// unique Array elements
+const arr = [1, 2, 1, 2, 4, 4, 1];
+const set = new Set(arr);
+const uniquiItem = [...set];
+console.log(uniquiItem); //print uniquiItem of each elements
