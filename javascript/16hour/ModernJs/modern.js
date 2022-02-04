@@ -174,7 +174,6 @@
 const frequencies = arr =>
   arr.reduce((acc, item) => {
     acc[item] = acc[item] ? acc[item] + 1 : 1;
-
     return acc;
   }, {});
 
