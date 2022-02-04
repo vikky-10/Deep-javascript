@@ -119,21 +119,65 @@
 
 // Optional chaining in functions
 
-function someFunction() {
-  console.log('Hii, there');
-}
+// function someFunction() {
+//   console.log('Hii, there');
+// }
 
-someFunction?.(); //optional chaining on a fucnction call
+// someFunction?.(); //optional chaining on a fucnction call
 
 // formate the output of json.stringify
 
-const someObject = {
-  name: 'vikky singh',
-  age: 21,
-  online: true,
-};
+// const someObject = {
+//   name: 'vikky singh',
+//   age: 21,
+//   online: true,
+// };
 
-console.log(JSON.stringify(someObject, null, 2));
+// console.log(JSON.stringify(someObject, null, 2));
 
 // passing the number '2' as the third argument will
-// formate the outpu with 2 spaces of indentation
+// formate the output with 2 spaces of indentation
+
+//filter method use case
+// const arr = [null, 'user', 'user', 'user1', undefined, 'rakesh'];
+// const validUser = arr.filter(Boolean);
+// console.log(validUser);//["user","user","user1","rakesh"]
+
+// user filter(Boolean) as a so called Falsy Bouncer.
+// this will filter an array of only truthy-value
+
+// it's especially helpful for post filtering an array of promise
+// results that might benull or undefined
+
+// const isrequired = () => {
+//   throw Error('ARGUMENT REQUIRED');
+// };
+// const setUsername = (username = isrequired()) => {
+//   console.log(username);
+// };
+// setUsername();
+
+// create Immutable Object and arrays
+
+// const letters = ['a', 'b', 'c'];
+// letters[1] = 'k';
+// console.log(letters); //mutable
+
+// Object.freeze(letters);
+// letters[1] = 'b';
+// console.log(letters); //cannot assign read only property '1'
+// of object [object Array]'
+
+// use Object.freeze  to make arrays and object Immutable
+
+// count occurences in an array
+const frequencies = arr =>
+  arr.reduce((acc, item) => {
+    acc[item] = acc[item] ? acc[item] + 1 : 1;
+
+    return acc;
+  }, {});
+
+console.log(
+  frequencies(['a', 'b', 'c', 'a', 'c', 'b', 'd', 'e', 'a', 'b', 'a'])
+);
