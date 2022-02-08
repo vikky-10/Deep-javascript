@@ -180,3 +180,9 @@ const frequencies = arr =>
 console.log(
   frequencies(['a', 'b', 'c', 'a', 'c', 'b', 'd', 'e', 'a', 'b', 'a'])
 );
+
+const user={};
+console.log(user.address&&user.address.street);//Duplicated property
+
+// by optional chaining
+console.log(user?.address?.street);
