@@ -180,3 +180,22 @@ const frequencies = arr =>
 console.log(
   frequencies(['a', 'b', 'c', 'a', 'c', 'b', 'd', 'e', 'a', 'b', 'a'])
 );
+
+const largeNumber = 1e12;
+console.log(largeNumber); //1000000000000
+
+// shallow copy of object and array
+const obj = { name: 'vikky singh', age: 46, reg: 11903549, collage: 'lpu' };
+const newObj = {};
+console.log(Object.keys(obj)); //array of key
+console.log(Object.values(obj)); //array of values
+Object.keys(obj).forEach(key => {
+  newObj[key] = obj[key];
+});
+console.log(newObj);
+
+// alternate way using sprade operator
+const newobj = { ...newObj };
+console.log(newobj);
+
+// similarly in cast of array
