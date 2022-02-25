@@ -181,6 +181,7 @@ console.log(
   frequencies(['a', 'b', 'c', 'a', 'c', 'b', 'd', 'e', 'a', 'b', 'a'])
 );
 
+// <<<<<<< HEAD
 const largeNumber = 1e12;
 console.log(largeNumber); //1000000000000
 
@@ -199,3 +200,21 @@ const newobj = { ...newObj };
 console.log(newobj);
 
 // similarly in cast of array
+// =======
+const user = {};
+console.log(user.address && user.address.street); //Duplicated property
+
+// by optional chaining
+console.log(user?.address?.street);
+
+// Declarative promise wrapper
+const resolve = async promise => {
+  try {
+    const result = await promise;
+    return [result, null];
+  } catch (error) {
+    return [null, error];
+  }
+};
+
+const [result, error] = await resolve(fetch('http://some.api'));
