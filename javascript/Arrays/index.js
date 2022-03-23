@@ -327,7 +327,24 @@ console.log('🔥 arrays');
 // console.log(ans);
 
 // unique Array elements
-const arr = [1, 2, 1, 2, 4, 4, 1];
-const set = new Set(arr);
-const uniquiItem = [...set];
-console.log(uniquiItem); //print uniquiItem of each elements
+// const arr = [1, 2, 1, 2, 4, 4, 1];
+// const set = new Set(arr);
+// const uniquiItem = [...set];
+// console.log(uniquiItem); //print uniquiItem of each elements
+
+// SPREAD Operator
+
+const arr = [1, 2, 3, 4];
+const arr1 = [5, 6, 7];
+
+const combine = [arr, arr1]; //[ [ 1, 2, 3, 4 ], [ 5, 6, 7 ] ]
+console.log(combine);
+
+// using spread operator
+
+console.log([...arr, ...arr1]);
+// output
+// [
+//   1, 2, 3, 4,
+//   5, 6, 7
+// ]
