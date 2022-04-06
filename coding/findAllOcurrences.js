@@ -20,10 +20,31 @@ const ele = "a";
 //   });
 // console.log(ans);
 
-var teacher = "Kyle";
-function anotherTeacher() {
-  var teacher = "vikky";
+var teacher = "kyle";
+{
+  let teacher = "suzzy";
   console.log(teacher);
 }
+
 console.log(teacher);
-anotherTeacher();
+
+// keep in mind block are not scope
+//until we declar a varible using let and const
+
+//clouser
+
+function outer() {
+  let counter = 0;
+  function incrementCounter() {
+    counter++;
+    console.log(counter);
+  }
+  return incrementCounter;
+}
+
+const myNewFunction = outer();
+myNewFunction(); //1
+myNewFunction(); //2
+const anotherFunction = outer();
+anotherFunction(); //1
+anotherFunction(); //2
