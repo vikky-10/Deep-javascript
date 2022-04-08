@@ -334,17 +334,73 @@ console.log('🔥 arrays');
 
 // SPREAD Operator
 
-const arr = [1, 2, 3, 4];
-const arr1 = [5, 6, 7];
+// const arr = [1, 2, 3, 4];
+// const arr1 = [5, 6, 7];
 
-const combine = [arr, arr1]; //[ [ 1, 2, 3, 4 ], [ 5, 6, 7 ] ]
-console.log(combine);
+// const combine = [arr, arr1]; //[ [ 1, 2, 3, 4 ], [ 5, 6, 7 ] ]
+// console.log(combine);
 
 // using spread operator
 
-console.log([...arr, ...arr1]);
+// console.log([...arr, ...arr1]);
 // output
 // [
 //   1, 2, 3, 4,
 //   5, 6, 7
 // ]
+
+// Array some method
+const characters = [
+  {
+    name: 'Luke Skywalker',
+    height: '172',
+    mass: '77',
+    eye_color: 'blue',
+    gender: 'male',
+  },
+  {
+    name: 'Darth Vader',
+    height: '202',
+    mass: '136',
+    eye_color: 'yellow',
+    gender: 'male',
+  },
+  {
+    name: 'Leia Organa',
+    height: '150',
+    mass: '49',
+    eye_color: 'brown',
+    gender: 'female',
+  },
+  {
+    name: 'Anakin Skywalker',
+    height: '188',
+    mass: '84',
+    eye_color: 'blue',
+    gender: 'male',
+  },
+];
+
+/*
+some method check if any array elements pass
+a test
+the some() methode executes the function once for each
+array element
+the some method does not execute the function for 
+the empty Array element
+
+the some() method does not change the original array
+
+*/
+
+// 1) Is there is one maloe character
+
+const oneMaleCharacter = characters.some(character => {
+  return character.gender === 'male';
+});
+console.log(oneMaleCharacter); // true
+
+// 2) Is there at least one character taller than 210;
+
+const oneTallerThan210 = characters.some(character => character.height > 210);
+console.log(oneTallerThan210);

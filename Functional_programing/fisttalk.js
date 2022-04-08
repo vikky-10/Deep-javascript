@@ -4,7 +4,15 @@ console.log(" 🔥 Anjana vankil");
 // Declarative  statement base programing  ex sql    //what and why
 //  object oriented   // we all know what is it
 
-//  ❤️ functional programing   👉  Functional programming is a programming paradigm, meaning that it is a way of thinking about software construction based on some fundamental, defining principles. or we can say that way of looking the program//code
+//  ❤️ functional programing   
+//👉  Functional programming is a 
+//programming
+// paradigm, meaning that it is a way 
+//of thinking about software construction 
+//based on some fundamental,
+// defining principles.
+// or we can say that way of looking 
+//the program//code
 // it is in declarative side rather than imperative
 //  🔴  avoiding shared state, mutable data, and side-effects.
 
