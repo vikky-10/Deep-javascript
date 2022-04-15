@@ -10,5 +10,5 @@ let p = new Promise((resolve, reject) => {
 p.then((message) => {
   console.log("This is in the then " + message);
 }).catch((message) => {
-  console.log("This is in the catch " + message);
+  console.log("This is in the catch  " + message);
 });
