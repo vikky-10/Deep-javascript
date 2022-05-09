@@ -37,11 +37,24 @@ function printCar(car: {
     year: 2017,
   })
   // Also works
-//   printCar({
-//     make: "Tesla",
-//     model: "Model 3",
-//     year: 2020,
-//     chargeVoltage: 220,
-//   })
+  printCar({
+    make: "Tesla",
+    model: "Model 3",
+    year: 2020,
+    chargeVoltage: 220,
+  })
+
+
+// //   only specify known properties, is valid
+// function add(a:number,b:number){
+//     console.log(a+b);
+// }
+// add(3,4,4);//error
+
+
+// Index Sigsdnatures
+
+
+
   
   

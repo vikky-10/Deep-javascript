@@ -24,9 +24,9 @@ printCar({
     year: 2017
 });
 // Also works
-//   printCar({
-//     make: "Tesla",
-//     model: "Model 3",
-//     year: 2020,
-//     chargeVoltage: 220,
-//   })
+printCar({
+    make: "Tesla",
+    model: "Model 3",
+    year: 2020,
+    chargeVoltage: 220
+});

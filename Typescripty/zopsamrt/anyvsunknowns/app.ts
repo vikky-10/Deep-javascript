@@ -20,3 +20,4 @@ exampleUnkown="vikky";
 // // userage=20;
 // // age=userage;//unknow is not assignable to type number
 // console.log(age)
+
